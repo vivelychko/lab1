@@ -148,7 +148,6 @@ public:
             cout << "[4] Inverse congruential generator" << endl;
             cout << "[5] Method of merge" << endl;
             cout << "[6] 3-x sigma" << endl;
-
             cout << "[7] Polar coordinate method" << endl;
             cout << "[8] The ratio method" << endl;
             cout << "[9] The logarithm method for generating a representative distribution" << endl;
@@ -159,17 +158,17 @@ public:
 
             switch (choice) {
                 case 0: return;
-                case 1: // well
+                case 1:
                     LinearCongruentialMethod();
                     showHistogram0To1();
                     break;
 
-                case 2: // well
+                case 2:
                     QuadraticCongruentialMethod();
                     showHistogram0To1();
                     break;
 
-                case 3: // well
+                case 3:
                     FibonacciSequence();
                     showHistogram0To1();
                     break;
@@ -180,15 +179,12 @@ public:
                     break;
 
                 case 5:
-                    //test commit
-
 
                     break;
 
                 case 6:
                     ThreeSigmaMethod();
                     showHistogramNeg3To3();
-                    // 6, 7,8, neg3 to 3
                     break;
 
                 default:
